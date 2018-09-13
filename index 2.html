@@ -1,0 +1,259 @@
+<html>
+    <head>
+    </head>
+
+    <body>
+    <audio>
+    <source id="soundfile" src="audio/ping.mp3"></source>
+    </audio>
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="450">
+<g>
+  <rect fill="#fff" id="canvas_background" height="452" width="582" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Options</title>
+  <rect stroke="null" id="svg_24" height="25" width="580" y="14" x="0" stroke-width="2" fill="#ccc"/>
+  <rect id="switchC" stroke="null" height="25" width="100" y="14" x="0" stroke-width="2" fill="#ccc"/>
+  <rect id="switchJ" stroke="null" height="25" width="115" y="14" x="100" stroke-width="2" fill="#ccc"/>
+  <rect id="switchJS" stroke="null" height="25" width="145" y="14" x="215" stroke-width="2" fill="#ccc"/>
+  <rect id="switchP" stroke="null" height="25" width="100" y="14" x="360" stroke-width="2" fill="#ccc"/>
+  <rect id="switchPy" stroke="null" height="25" width="120" y="14" x="460" stroke-width="2" fill="#ccc"/>
+  
+    </g>
+    <g>
+  <rect rx="15" id="svg_1" height="384" width="566" y="57" x="7" stroke-width="2" stroke="#4c4c4c" fill="#e5e5e5"/>
+  <rect id="svg_9" height="24.999999" width="563" y="307.619321" x="8.49999" stroke-width="2" fill="#cccccc"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="15" id="svg_2" y="84.619319" x="32.500001" stroke-width="0" stroke="#4c4c4c" fill="#000000">source code</text>
+  <rect stroke="#4c4c4c" id="svg_3" height="200" width="191.000004" y="94.619319" x="33.500001" fill="#fff"/>
+  <rect id="machine-box" stroke="#4c4c4c" id="svg_6" height="200" width="191.000004" y="94.619319" x="353.500001" fill="#fff" fill-opacity="null" stroke-opacity="null"/>
+  <rect stroke="#4c4c4c" id="svg_7" height="78.000007" width="510" y="338.619315" x="34" fill="#fff"/>
+     
+  <foreignobject class="node" x="36" y="95" width="185" height="200">
+  <div id="source"> Choose a language above. </div>                
+  </foreignobject>
+     
+  <foreignobject class="node" x="356" y="95" width="185" height="200">
+  <div id="machine"> &nbsp; </div>                
+  </foreignobject>
+     
+  <foreignobject class="node" x="36" y="339" width="505" height="200">
+  <div id="output"> &nbsp; </div>                
+  </foreignobject>
+     
+    </g>
+    <g>
+        <title>Compile</title>
+    <path id="gear" fill="#5af" stroke="#4c4c4c" stroke-width="1" stroke-opacity="null" d="M290 166a11 11 0 1 0 4 22l2 3 4-2-2-4a11 11 0 0 0-8-19zm0-30a41 41 0 1 0 0 83 41 41 0 0 0 0-83zm29 55l-2 4-9-1-5 3v10l-4 1-6-7a24 24 0 0 1-6 0l-6 7-4-1v-9l-5-4-8 1-3-4 6-6-1-7-8-4 1-4 9-2 3-5-3-9 3-3 8 5 6-2 3-9h5l2 9 6 2 8-5 4 3-4 9 3 5 9 2 1 4-8 5-1 6 6 6z"
+    onmouseover="document.getElementById('gear').setAttribute('fill', '#6bf'); document.getElementById('gear').setAttribute('stroke', '#49e');
+    document.getElementById('gear').setAttribute('stroke-width', '3');" 
+    onmouseout="document.getElementById('gear').setAttribute('fill', '#5af'); document.getElementById('gear').setAttribute('stroke', '#4c4c4c');
+    document.getElementById('gear').setAttribute('stroke-width', '1');"
+    onclick="callCompiler()"/>
+        </g>
+        <g>
+    <text id="machine-word" x="354" y="85" stroke="#4c4c4c" stroke-width="0" font-family="Helvetica, Arial, sans-serif" font-size="15">
+        
+      machine code
+    </text>
+    
+    <text x="36" y="325" stroke="#4c4c4c" stroke-width="0" font-family="Helvetica, Arial, sans-serif" font-size="15">
+      output
+    </text>
+    </g>
+    <g>
+  <path id="arrow1" stroke="#4c4c4c" id="svg_11" d="m231.561361,326.425198l0,4.574794l-26.184173,-14.169688l26.184173,-14.169813l0,4.908834c7.10522,0.003114 19.578933,-0.566005 19.578933,-4.599533c0,-5.635776 -13.027325,-8.642294 -13.027325,-8.642294l0,-4.321098c0,0 29.264226,-0.937193 29.264226,19.913761c0,16.381347 -25.063713,16.996914 -35.815833,16.505037z" fill-opacity="null" stroke-opacity="null" stroke-width="null" fill="#56aaff"
+    onmouseover="document.getElementById('arrow1').setAttribute('fill', '#6bf'); document.getElementById('arrow1').setAttribute('stroke', '#49e');
+    document.getElementById('arrow1').setAttribute('stroke-width', '3');" 
+    onmouseout="document.getElementById('arrow1').setAttribute('fill', '#5af'); document.getElementById('arrow1').setAttribute('stroke', '#4c4c4c');
+    document.getElementById('arrow1').setAttribute('stroke-width', '1');"
+                      onclick="outputR()"/>
+    
+    </g>
+    <g>
+    <path id="arrow2" transform="rotate(90 449,316.2007446289063) " id="svg_14" d="m432.00001,315.93728c0.031597,-5.076927 -0.020218,-10.160639 0.259842,-15.228637c6.881592,1.667151 13.682021,4.395018 20.447653,6.848167c0.363208,-2.489422 0.192255,-4.554427 0.50783,-6.856072c4.346525,4.843295 8.653857,9.755559 12.784656,14.901742c-3.963101,5.837543 -8.508922,10.907047 -12.9717,16.098272c-0.144515,-2.417478 -0.289055,-4.834938 -0.433572,-7.252416c-6.577477,2.338798 -13.533379,4.756888 -20.153383,6.894997c-0.450192,-4.933599 -0.43696,-10.306434 -0.441327,-15.406053z" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#4c4c4c" fill="#56aaff"    onmouseover="document.getElementById('arrow2').setAttribute('fill', '#6bf'); document.getElementById('arrow2').setAttribute('stroke', '#49e');
+    document.getElementById('arrow2').setAttribute('stroke-width', '3');" 
+    onmouseout="document.getElementById('arrow2').setAttribute('fill', '#5af'); document.getElementById('arrow2').setAttribute('stroke', '#4c4c4c');
+    document.getElementById('arrow2').setAttribute('stroke-width', '1');"
+          onclick="outputC()"/></g>
+    <g>
+        <title>Options</title>
+    <text id="ccc" x="37" y="31" fill-opacity="null" stroke="#4c4c4c" stroke-opacity="null" stroke-width="1" font-family="Helvetica, Arial, sans-serif" font-size="15" 
+     onmouseover="document.getElementById('ccc').setAttribute('stroke', '#6bf'); document.getElementById('ccc').setAttribute('fill', '#6bf'); document.getElementById('switchC').setAttribute('fill', '#999')" 
+     onmouseout="document.getElementById('ccc').setAttribute('stroke', '#4c4c4c'); ; document.getElementById('ccc').setAttribute('fill', '#000'); document.getElementById('switchC').setAttribute('fill', '#ccc')"
+     onclick="callC()">
+      C++
+    </text>
+    <text id="java" x="142" y="31" fill-opacity="null" stroke="#4c4c4c" stroke-opacity="null" stroke-width="1" font-family="Helvetica, Arial, sans-serif" font-size="15" 
+     onmouseover="document.getElementById('java').setAttribute('stroke', '#6bf'); document.getElementById('java').setAttribute('fill', '#6bf'); document.getElementById('switchJ').setAttribute('fill', '#999')" 
+     onmouseout="document.getElementById('java').setAttribute('stroke', '#4c4c4c'); ; document.getElementById('java').setAttribute('fill', '#000'); document.getElementById('switchJ').setAttribute('fill', '#ccc')"
+     onclick="callJava()">
+      Java
+    </text>
+    <text id="JS" x="250" y="31" fill-opacity="null" stroke="#4c4c4c" stroke-opacity="null" stroke-width="1" font-family="Helvetica, Arial, sans-serif" font-size="15" 
+     onmouseover="document.getElementById('JS').setAttribute('stroke', '#6bf'); document.getElementById('JS').setAttribute('fill', '#6bf'); document.getElementById('switchJS').setAttribute('fill', '#999')" 
+     onmouseout="document.getElementById('JS').setAttribute('stroke', '#4c4c4c'); ; document.getElementById('JS').setAttribute('fill', '#000'); document.getElementById('switchJS').setAttribute('fill', '#ccc')"
+     onclick="callJS()">
+      JavaScript
+    </text>
+    <text id="perl" x="396" y="31" fill-opacity="null" stroke="#4c4c4c" stroke-opacity="null" stroke-width="1" font-family="Helvetica, Arial, sans-serif" font-size="15" 
+     onmouseover="document.getElementById('perl').setAttribute('stroke', '#6bf'); document.getElementById('perl').setAttribute('fill', '#6bf'); document.getElementById('switchP').setAttribute('fill', '#999')" 
+     onmouseout="document.getElementById('perl').setAttribute('stroke', '#4c4c4c'); ; document.getElementById('perl').setAttribute('fill', '#000'); document.getElementById('switchP').setAttribute('fill', '#ccc')"
+     onclick="callPerl()">
+      Perl
+    </text>
+    <text id="python" x="499" y="31" fill-opacity="null" stroke="#4c4c4c" stroke-opacity="null" stroke-width="1" font-family="Helvetica, Arial, sans-serif" font-size="15" 
+     onmouseover="document.getElementById('python').setAttribute('stroke', '#6bf'); document.getElementById('python').setAttribute('fill', '#6bf'); document.getElementById('switchPy').setAttribute('fill', '#999')" 
+     onmouseout="document.getElementById('python').setAttribute('stroke', '#4c4c4c'); ; document.getElementById('python').setAttribute('fill', '#000'); document.getElementById('switchPy').setAttribute('fill', '#ccc')"
+     onclick="callPython()">
+      Python
+    </text>
+  </g>
+</svg>
+
+        
+        <script>
+            var audio = document.getElementsByTagName("audio")[0];
+            var whichLang = "none"     
+            var compiled = "no"
+        
+            function callC() {
+	    document.getElementById("source").innerHTML='#include &lt;iostream&gt;<br>using namespace std;<br><br>int main()<br> { <br> &nbsp;&nbsp; cout &lt;&lt; "Hello, World!";<br> &nbsp;&nbsp; return 0;<br>}'; document.getElementById('arrow1').setAttribute('fill-opacity', '0');
+        document.getElementById('arrow1').setAttribute('stroke-opacity', '0');
+        document.getElementById('arrow2').setAttribute('fill-opacity', '1');
+        document.getElementById('arrow2').setAttribute('stroke-opacity', '1');
+        document.getElementById('gear').setAttribute('fill-opacity', '1');
+        document.getElementById('gear').setAttribute('stroke-opacity', '1');
+        document.getElementById('machine-box').setAttribute('fill-opacity', '1');
+        document.getElementById('machine-box').setAttribute('stroke-opacity', '1');
+        document.getElementById('machine-word').setAttribute('fill-opacity', '1');
+        document.getElementById('machine-word').setAttribute('stroke-opacity', '1');
+            audio.play();
+            whichLang = "Clang";
+            compiled = "sorta";
+        document.getElementById("output").innerHTML='&nbsp';
+        document.getElementById("machine").innerHTML='&nbsp';
+        }
+            
+            function callJava() {
+	    document.getElementById("source").innerHTML='public class HelloWorld {<br><br> &nbsp;&nbsp;     public static void main(String[] args) {<br> &nbsp;&nbsp;&nbsp;&nbsp; System.out.println("Hello, World!"); <br> &nbsp;&nbsp; } <br><br> }'; document.getElementById('arrow1').setAttribute('fill-opacity', '0');
+        document.getElementById('arrow1').setAttribute('stroke-opacity', '0');
+        document.getElementById('arrow2').setAttribute('fill-opacity', '1');
+        document.getElementById('arrow2').setAttribute('stroke-opacity', '1');
+        document.getElementById('gear').setAttribute('fill-opacity', '1');
+        document.getElementById('gear').setAttribute('stroke-opacity', '1');
+        document.getElementById('machine-box').setAttribute('fill-opacity', '1');
+        document.getElementById('machine-box').setAttribute('stroke-opacity', '1');
+        document.getElementById('machine-word').setAttribute('fill-opacity', '1');
+        document.getElementById('machine-word').setAttribute('stroke-opacity', '1');
+            audio.play();
+            whichLang = "Jlang";
+            compiled = "sorta";
+        document.getElementById("output").innerHTML='&nbsp';
+        document.getElementById("machine").innerHTML='&nbsp';
+        }
+            
+            function callJS() {
+	    document.getElementById("source").innerHTML='&lt;script&gt;<br> &nbsp;&nbsp; alert("Hello, world!"); <br> &lt;/script&gt;'; document.getElementById('arrow1').setAttribute('fill-opacity', '1');
+        document.getElementById('arrow1').setAttribute('stroke-opacity', '1');
+        document.getElementById('arrow2').setAttribute('fill-opacity', '0');
+        document.getElementById('arrow2').setAttribute('stroke-opacity', '0');
+        document.getElementById('gear').setAttribute('fill-opacity', '0');
+        document.getElementById('gear').setAttribute('stroke-opacity', '0');
+        document.getElementById('machine-box').setAttribute('fill-opacity', '0');
+        document.getElementById('machine-box').setAttribute('stroke-opacity', '0');
+        document.getElementById('machine-word').setAttribute('fill-opacity', '0');
+        document.getElementById('machine-word').setAttribute('stroke-opacity', '0');
+            audio.play();
+            whichLang = "JSlang";
+                compiled = "no";
+        document.getElementById("output").innerHTML='&nbsp';
+        document.getElementById("machine").innerHTML='&nbsp';
+        }
+            
+             function callPerl() {
+	    document.getElementById("source").innerHTML='#!/usr/bin/perl<br>print "Hello, World!";'; 
+        document.getElementById('arrow1').setAttribute('fill-opacity', '1');
+        document.getElementById('arrow1').setAttribute('stroke-opacity', '1');
+        document.getElementById('arrow2').setAttribute('fill-opacity', '0');
+        document.getElementById('arrow2').setAttribute('stroke-opacity', '0');
+        document.getElementById('gear').setAttribute('fill-opacity', '0');
+        document.getElementById('gear').setAttribute('stroke-opacity', '0');
+        document.getElementById('machine-box').setAttribute('fill-opacity', '0');
+        document.getElementById('machine-box').setAttribute('stroke-opacity', '0');
+        document.getElementById('machine-word').setAttribute('fill-opacity', '0');
+        document.getElementById('machine-word').setAttribute('stroke-opacity', '0');
+            audio.play();
+            whichLang = "Plang";
+                 compiled = "no";
+        document.getElementById("output").innerHTML='&nbsp';
+        document.getElementById("machine").innerHTML='&nbsp';
+        }
+            
+             function callPython() {
+	    document.getElementById("source").innerHTML='print ("Hello, World!")';
+            audio.play(); 
+        document.getElementById('arrow1').setAttribute('fill-opacity', '1');
+        document.getElementById('arrow1').setAttribute('stroke-opacity', '1');
+        document.getElementById('arrow2').setAttribute('fill-opacity', '0');
+        document.getElementById('arrow2').setAttribute('stroke-opacity', '0');
+        document.getElementById('gear').setAttribute('fill-opacity', '0');
+        document.getElementById('gear').setAttribute('stroke-opacity', '0');
+        document.getElementById('machine-box').setAttribute('fill-opacity', '0');
+        document.getElementById('machine-box').setAttribute('stroke-opacity', '0');
+        document.getElementById('machine-word').setAttribute('fill-opacity', '0');
+        document.getElementById('machine-word').setAttribute('stroke-opacity', '0');
+            whichLang = "Pylang";
+                 compiled = "no";
+        document.getElementById("output").innerHTML='&nbsp';
+        document.getElementById("machine").innerHTML='&nbsp';
+        }
+            
+            function callCompiler() {
+                
+	    if (whichLang == "none") {
+                document.getElementById("machine").innerHTML='Choose a language before trying to compile.';
+                audio.play();
+            } else if (whichLang == "Clang") {
+                document.getElementById("machine").innerHTML='*(A0 0x/ur/lib/libc++.1.dylib 8Q/usr/lib/libSystem.B.dylib &3)3UHaAHEIHa=-Hc5^ E,E 1...HaEaHEf]VUHaAHEI Ha}~HauHaE}EHatEo Ha}EHautHa-EK EIHa=-Hc5^ E,E aHEf]VUHaAHEI Ha}~Hau HavB0N';
+                compiled = "yes";
+                audio.play();
+            } else if (whichLang == "Jlang") {
+                document.getElementById("machine").innerHTML='Ep% . - | | [ ^ -{init}, i()v, "code, #LineNumberTable, "main, ,([ LJava/lang/string; )V, SourceFile, [ i h $Hello, World, t MyProgram, tJava/lang/object, tjava/lang/System,tout, 4java/io/PrintStream;, tjava/io/PrintStream, .println, i(Ljava/lang/String;)V !';
+                compiled = "yes";
+                audio.play();
+            }
+        }
+            
+    function outputR() {
+	    if (compiled == "no") {
+            if (whichLang == "JSlang") {
+                document.getElementById("output").innerHTML='Hello World!';
+                audio.play();
+            } else if (whichLang == "Plang") {
+                document.getElementById("output").innerHTML='Hello World!';
+                audio.play();
+            } else if (whichLang == "Pylang") {
+                document.getElementById("output").innerHTML='Hello World!';
+                audio.play();
+            }
+        }
+    }
+            
+    function outputC() {
+	    if (compiled == "yes") {
+            if (whichLang == "Clang") {
+                document.getElementById("output").innerHTML='Hello World!';
+                audio.play();
+            } else if (whichLang == "Jlang") {
+                document.getElementById("output").innerHTML='Hello World!';
+                audio.play();
+            }
+        }
+    }
+            
+        </script>
+        
+</body>
