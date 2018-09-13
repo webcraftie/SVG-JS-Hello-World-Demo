@@ -53,6 +53,8 @@
     onmouseout="document.getElementById('gear').setAttribute('fill', '#5af'); document.getElementById('gear').setAttribute('stroke', '#4c4c4c');
     document.getElementById('gear').setAttribute('stroke-width', '1');"
     onclick="callCompiler()"/>
+	    
+    <text id="compName" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_2" y="235" x="265" stroke-width="0" stroke="#4c4c4c" fill="#000000">Compiler</text>
         </g>
         <g>
     <text id="machine-word" x="354" y="85" stroke="#4c4c4c" stroke-width="0" font-family="Helvetica, Arial, sans-serif" font-size="15">
@@ -136,6 +138,7 @@
             compiled = "sorta";
         document.getElementById("output").innerHTML='&nbsp';
         document.getElementById("machine").innerHTML='&nbsp';
+	document.getElementById("compName").innerHTML=' &nbsp;&nbsp; G++';
         }
             
             function callJava() {
@@ -154,6 +157,7 @@
             compiled = "sorta";
         document.getElementById("output").innerHTML='&nbsp';
         document.getElementById("machine").innerHTML='&nbsp';
+	document.getElementById("compName").innerHTML='&nbsp; JavaC';
         }
             
             function callJS() {
@@ -172,6 +176,7 @@
                 compiled = "no";
         document.getElementById("output").innerHTML='&nbsp';
         document.getElementById("machine").innerHTML='&nbsp';
+	document.getElementById("compName").innerHTML='&nbsp;';
         }
             
              function callPerl() {
@@ -191,6 +196,7 @@
                  compiled = "no";
         document.getElementById("output").innerHTML='&nbsp';
         document.getElementById("machine").innerHTML='&nbsp';
+	document.getElementById("compName").innerHTML='&nbsp;';
         }
             
              function callPython() {
@@ -210,6 +216,7 @@
                  compiled = "no";
         document.getElementById("output").innerHTML='&nbsp';
         document.getElementById("machine").innerHTML='&nbsp';
+	document.getElementById("compName").innerHTML='&nbsp;';
         }
             
             function callCompiler() {
